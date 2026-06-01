@@ -1,0 +1,35 @@
+# ─── OS ───────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── Go binaries and build artifacts ──────────────────────────────────────────
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+priority-service-*
+go-pure-impl/priority-service-*
+go-cgo-impl/priority-service-*
+
+# ─── Rust build artifacts ─────────────────────────────────────────────────────
+rust-impl/target/
+
+# ─── C/C++ object files and libraries ─────────────────────────────────────────
+*.o
+*.a
+*.lib
+*.obj
+
+# ─── IDE / Editor ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ─── Misc ─────────────────────────────────────────────────────────────────────
+*.pdf
+*.html

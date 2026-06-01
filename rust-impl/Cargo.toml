@@ -1,0 +1,19 @@
+[package]
+name = "priority-service"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+arc-swap = "1.7"
+rayon = "1.10"
+rand = "0.8"
+tikv-jemallocator = "0.6"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+
+[dev-dependencies]
+rand = "0.8"
