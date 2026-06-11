@@ -4,11 +4,11 @@ import (
 	"sync/atomic"
 )
 
-const numPPS = 200
-const numBinTagsPerPPS = 20
+const numPPS = 70
+const numBinTagsPerPPS = 10
 
 // NumOrders is the total number of orders the system tracks per pod.
-const NumOrders = 1_000_000
+const NumOrders = 300000
 
 // PairsPerPod is the number of (PPS, BinTag) pairs per pod.
 const PairsPerPod = numPPS * numBinTagsPerPPS

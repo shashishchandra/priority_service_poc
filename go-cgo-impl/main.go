@@ -72,7 +72,8 @@ func main() {
 	// ── Step 3: Run 3 compute cycles ─────────────────────────────────────────
 	dictClient := NewMockItemDictClient(7, 100_000)
 	fmt.Println("\n--- Compute cycles ---")
-	for i := 1; i <= 3; i++ {
+	for i := 1; i <= 100; i++ {
+		time.Sleep(1000 * time.Millisecond)
 		fmt.Printf("Cycle %d: fetching ItemDict update... ", i)
 		update := dictClient.Fetch()
 		fmt.Printf("%d updates received\n", len(update.Updates))

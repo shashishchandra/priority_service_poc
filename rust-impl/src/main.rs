@@ -128,7 +128,7 @@ fn main() {
     }
 
     // ── 4. Run 3 compute cycles ───────────────────────────────────────────────
-    for cycle in 1..=3_u32 {
+    for cycle in 1..=100_u32 {
         println!("--- Cycle {} ---", cycle);
         let stats = engine.run_cycle();
         println!(

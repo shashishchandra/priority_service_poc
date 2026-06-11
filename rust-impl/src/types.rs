@@ -3,9 +3,9 @@ use std::sync::Arc;
 
 // ─── Constants ───────────────────────────────────────────────────────────────
 
-pub const NUM_ORDERS: usize = 1_000_000;
-pub const NUM_PPS: usize = 200;
-pub const NUM_BIN_TAGS_PER_PPS: usize = 20;
+pub const NUM_ORDERS: usize = 300000;
+pub const NUM_PPS: usize = 70;
+pub const NUM_BIN_TAGS_PER_PPS: usize = 10;
 pub const PAIRS_PER_POD: usize = NUM_PPS * NUM_BIN_TAGS_PER_PPS;
 pub const TOP_K: usize = 1_000;
 pub const NUM_TABLES: usize = 4;
